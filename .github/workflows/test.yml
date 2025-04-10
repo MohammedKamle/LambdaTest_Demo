@@ -11,7 +11,6 @@ on:
           - Web Browser Automation (Single)
           - Web Browser Automation (Parallel)
           - Mobile Browser Automation (Single)
-          - Mobile Browser Automation (Parallel)
           - Android App Automation (Single)
           - Android App Automation (Parallel)
           - iOS App Automation (Single)
@@ -57,9 +56,6 @@ jobs:
             "Mobile Browser Automation (Single)")
               mvn test -D suite=mobile.xml
               ;;
-            "Mobile Browser Automation (Parallel)")
-              mvn test -D suite=mobile_parallel.xml
-              ;;
             "Android App Automation (Single)")
               mvn test -D suite=android_single.xml
               ;;
@@ -71,9 +67,6 @@ jobs:
               ;;
             "iOS App Automation (Parallel)")
               mvn test -D suite=iOS_parallel.xml
-              ;;
-            "Cypress Test")
-              npm test
               ;;
             "Playwright Test (Single Thread)")
               node playwright_single.js
