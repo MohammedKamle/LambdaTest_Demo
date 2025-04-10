@@ -36,9 +36,12 @@ public class TestNGTodo2 {
         caps.setCapability("network", true);
         caps.setCapability("console", true);
         caps.setCapability("performance", true);
-        caps.setCapability("accessibility", true);
+         caps.setCapability("accessibility", true);
         
-        caps.setCapability("networkThrottling", "Regular 4G");
+        caps.setCapability("accessibility.bestPractice", true);
+        caps.setCapability("accessibility.needsReview", true);
+        
+        
 
         caps.setCapability("commandLog", true);
         caps.setCapability("systemLog", true);

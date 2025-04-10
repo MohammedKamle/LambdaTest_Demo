@@ -35,12 +35,15 @@ public class TestNGTodo3 {
         caps.setCapability("performance",true);
         caps.setCapability("network", true);
         caps.setCapability("console", true);
-        caps.setCapability("networkThrottling", "Regular 4G");
+        
         caps.setCapability("commandLog", true);
         caps.setCapability("systemLog", true);
         caps.setCapability("terminal", true);
         caps.setCapability("video", true);
-
+         caps.setCapability("accessibility", true);
+        
+        caps.setCapability("accessibility.bestPractice", true);
+        caps.setCapability("accessibility.needsReview", true);
 
         String[] Tags = new String[] { "Feature", "Tag", "Moderate" };
         caps.setCapability("tags", Tags);
