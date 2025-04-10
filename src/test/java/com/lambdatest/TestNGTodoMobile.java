@@ -33,6 +33,9 @@ public class TestNGTodoMobile {
         caps.setCapability("name", m.getName() + this.getClass().getName());
         caps.setCapability("plugin", "git-testng");
         caps.setCapability("isRealMobile", true);
+        caps.setCapability("console", true);
+        caps.setCapability("network", true);
+        
 
         String[] Tags = new String[] { "Feature", "Tag", "Moderate" };
         caps.setCapability("tags", Tags);
