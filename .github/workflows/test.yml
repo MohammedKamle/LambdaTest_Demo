@@ -15,8 +15,6 @@ on:
           - Android App Automation (Parallel)
           - iOS App Automation (Single)
           - iOS App Automation (Parallel)
-          - Playwright Test (Single Thread)
-          - Playwright Test (Parallel 3 Threads)
 
 jobs:
   run_tests:
@@ -66,12 +64,6 @@ jobs:
               ;;
             "iOS App Automation (Parallel)")
               mvn test -D suite=iOS_parallel.xml
-              ;;
-            "Playwright Test (Single Thread)")
-              node playwright_single.js
-              ;;
-            "Playwright Test (Parallel 3 Threads)")
-              node playwright_parallel.js
               ;;
             *)
               echo "Invalid option selected"
