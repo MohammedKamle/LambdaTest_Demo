@@ -24,6 +24,11 @@ jobs:
   run_tests:
     runs-on: ubuntu-latest
 
+    env:
+      LT_USERNAME: ${{ secrets.MY_SECRET_KEY }}
+      LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY}}
+    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
