@@ -64,8 +64,7 @@ public class TestNGTodo3 {
         System.out.println("Checking Box");
         driver.findElement(By.name("li3")).click();
 
-        System.out.println("Checking Another Box");
-        driver.findElement(By.name("li45")).click();
+   
 
         driver.findElement(By.id("sampletodotext")).sendKeys(" List Item 6");
         driver.findElement(By.id("addbutton")).click();
